@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@media screen and (min-width:1280px), (max-width:1440px) {
+    body {
+        background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /* Hero style Start */
+    .main-heading {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 100px;
+        justify-content: center;
+        margin: 0px 30px;
+        padding: 50px;
+    }
+    .main-text{
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    h1 {
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        font-size: 45px;
+    }
+    .main-text>p {
+        color: hsl(303, 10%, 53%);
+        line-height: 124%;
+        
+    }
+    /* Star Ratings */
+    .rating {
+
+        margin-top: -243px;
+        width: 550px;
+        margin-left: 1000px;
+    }
+    .rate1, .rate2, .rate3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: hsl(300, 43%, 22%);
+        background-color: hsl(300, 24%, 96%);
+        margin-top: 15px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 8px;
+    }
+    .rating>div>div>p {
+        margin-left: 30px;
+    }
+    .rating>div>div>img {
+        margin-left: 5px;
+    }
+    .rate1 {
+        margin-right: 40px !important;
+    }
+    .rate2 {
+        margin-left: 50px;
+        margin-right: -10px !important;
+    }
+    .rate3 {
+        margin-left: 100px;
+        margin-right: -50px !important;
+    }
+    /* People Ratings */
+    .main-grid2 {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        column-gap: 20px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .main-grid2>div>p {
+        padding: 0px 50px 20px 50px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .card1, .card2, .card3 {
+        border-radius: 8px;
+        background-color: hsl(300, 43%, 22%);
+        color: hsl(300, 24%, 96%);
+        font-weight: 400;
+        align-items: center;
+    }
+    .card1 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .card2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .card3 {
+        margin-top: 90px;
+        margin-bottom: -10px;
+    }
+    .img-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -120px;
+    }
+    h4 {
+        padding-left: 15px;
+    }
+    .profile-img {
+        border-radius: 100px;
+        width: 30px;
+    }
+    span {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .card-section{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .main-heading {
+        display: block;
+        justify-content: center;
+        margin: 0px 0px;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .main-text>p {
+        text-align: center;
+        line-height: 22px;
+        font-size: 13px;
+    }
+    /* Star Ratings */
+    .rate1, .rate2, .rate3 {
+        display: grid;
+        text-align: center;
+        margin: 15px 0px 0px 0px !important;
+        border-radius: 8px;
+        padding: 0px;
+    }
+    .rating{
+        width: 280px;
+     margin-left: 10px;
+     margin-top: 2px;
+    }
+    span {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .rating>div>div>p {
+        margin-left: 0px;
+        padding-bottom: 8px !important;
+    }
+    .rating>div>div>img {
+        padding-top: 8px !important;
+        margin-left: 5px;
+    }
+    .main-text{
+        margin-top: 2px;
+    }
+
+    /* People Ratings */
+    .main-grid2 {
+        display: block;
+        margin: 0px 15px;
+    }
+    .main-grid2>div>p {
+        padding: 0px 50px 20px 50px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .card1, .card2, .card3 {
+        margin: 0px;
+    }
+    
+    .img-grid {
+        margin-left: -80px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .profile-img {
+        border-radius: 100px;
+        width: 30px;
+    }
+    
+}
